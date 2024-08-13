@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Montserrat:400,700");
+
+:root {
+  --yellow: #F3C623;
+  --teal: #127681;
+}
+
+.body {
+  margin: 0px;
+  font-family: 'Lora', serif;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+
+.banner {
+  background-image: url("https://loremflickr.com/320/240");
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+}
+
+h1, h2 {
+  font-family: 'Monserrat', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgb(201, 201, 201);
+  font-weight: normal;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+}
+
+.banner span {
+  margin: 0;
+  font-size: 2em;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.container > p {
+  font-size: 1.3em;
+}
+
+a {
+  background-image: linear-gradient(to bottom, var(--yellow, 0.3), var(--yellow, 0.3));
+  font-weight: lighter;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: linear-gradient(to bottom, var(--teal), var(--teal));
+  color: white;
+}
+
+@media(max-width: 1200px){
+  .container {
+    width: 800px;
+  }
+}
+
+@media(max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    width: 450px;
+  }
+}
+@media(max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .banner h1 {
+    font-size: 2em;
+  }
+  .banner span {
+    font-size: 1.5em;
+  }
+}
