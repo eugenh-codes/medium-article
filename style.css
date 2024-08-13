@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Montserrat:400,700");
 
 :root {
+  --gray: #F4F6FF;
   --yellow: #F3C623;
   --teal: #127681;
+  --navy: #10375C;
+  --tarnsparent-navy: rgba(16, 55, 92, 0.5);
+}
+
+::selection {
+  background-color: rgb(25, 25, 25);
+  color: white;
 }
 
 .body {
@@ -13,10 +21,11 @@
 }
 
 .banner {
-  background-image: url("https://loremflickr.com/320/240");
+  background-image: url('images/Artboard-619.png');
   background-size: cover;
-  color: white;
+  color: var(--teal);
   padding: 100px 0;
+  opacity: 0.8;
 }
 
 h1, h2 {
@@ -25,7 +34,7 @@ h1, h2 {
 }
 
 h2 {
-  color: rgb(201, 201, 201);
+  color: var(--teal);
   font-weight: normal;
 }
 
@@ -34,6 +43,13 @@ h2 {
 }
 
 .banner span {
+  background-color: var(--yellow);
+  color: black;
+}
+
+.banner .subtitle-italic {
+  background-color: white;
+  color: black;
   margin: 0;
   font-size: 2em;
   font-style: italic;
@@ -48,18 +64,28 @@ h2 {
 .container > p {
   font-size: 1.3em;
 }
+.container > p > span {
+  background-color: var(--yellow);
+  opacity: 0.9;
+  cursor: none;
+}
 
 a {
-  background-image: linear-gradient(to bottom, var(--yellow, 0.3), var(--yellow, 0.3));
+  background-image: linear-gradient(to bottom, var(--tarnsparent-navy, 0.3), var(--tarnsparent-navy, 0.3));
   font-weight: lighter;
   font-style: italic;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  background-image: linear-gradient(to bottom, var(--teal), var(--teal));
+  background-image: linear-gradient(to bottom, black, black);
   color: white;
+}
+
+ul {
+  font-size: 1.3em;
+  line-height: 1.5;
 }
 
 @media(max-width: 1200px){
